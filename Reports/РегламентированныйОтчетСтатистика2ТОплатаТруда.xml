@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Report uuid="584eed0e-5315-4bac-910d-4390d6bba19a">
+		<InternalInfo>
+			<xr:GeneratedType name="ReportObject.РегламентированныйОтчетСтатистика2ТОплатаТруда" category="Object">
+				<xr:TypeId>3b127d05-1fe2-4673-98b5-fa21846c3645</xr:TypeId>
+				<xr:ValueId>ff27c391-9b9d-44e0-a734-88e1e6527ae0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ReportManager.РегламентированныйОтчетСтатистика2ТОплатаТруда" category="Manager">
+				<xr:TypeId>5a4316d6-762d-4946-bf87-6afa8e8cb12c</xr:TypeId>
+				<xr:ValueId>9da91037-abc3-4279-b7b5-8ea9f2a98e7a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>РегламентированныйОтчетСтатистика2ТОплатаТруда</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регламентированный отчет форма № 2-Т Оплата труда</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>Report.РегламентированныйОтчетСтатистика2ТОплатаТруда.Form.ОсновнаяФорма</DefaultForm>
+			<AuxiliaryForm/>
+			<MainDataCompositionSchema/>
+			<DefaultSettingsForm/>
+			<AuxiliarySettingsForm/>
+			<DefaultVariantForm/>
+			<VariantsStorage/>
+			<SettingsStorage/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ОсновнаяФорма</Form>
+			<Form>ФормаОтчета2Т2022Кв1</Form>
+			<Form>ФормаОтчета2Т2025Кв1</Form>
+			<Template>ФормаОтчета2Т2022Кв1_Форма2ТСтраница1</Template>
+			<Template>ФормаОтчета2Т2022Кв1_Форма2ТСтраница2</Template>
+			<Template>ФормаОтчета2Т2022Кв1_Форма2ТСтраница3</Template>
+			<Template>ФормаОтчета2Т2022Кв1_Форма2ТСтраница4</Template>
+			<Template>ФормаОтчета2Т2025Кв1_Форма2ТСтраница1</Template>
+			<Template>ФормаОтчета2Т2025Кв1_Форма2ТСтраница2</Template>
+			<Template>ФормаОтчета2Т2025Кв1_Форма2ТСтраница3</Template>
+			<Template>ФормаОтчета2Т2025Кв1_Форма2ТСтраница4</Template>
+		</ChildObjects>
+	</Report>
+</MetaDataObject>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Subsystem uuid="85abe48d-424d-4a2c-9844-e3e95d17c3b5">
+		<Properties>
+			<Name>Отчетность1С</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчетность  1С</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Отчетность1СКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Отчетность1СКлиентПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Отчетность1СКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Отчетность1СКлиентСерверПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Отчетность1ССервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Отчетность1ССерверПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыОтчетность1С</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РегламентированныйОтчет200Форма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.БазовыеПраваОтчетность1С</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ДлительнаяОперация48Отчетность1С</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Отчетность1СВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ДлительнаяОперацияОтчетность1С</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ПФ_MXL_УведомлениеПоФНООтчетность1С</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">61ded556-3144-4eb1-b265-6c78144e7f05</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">9a8d1eac-6ec3-4232-8415-ea54ad6a6408</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">fb1dfe42-7bd5-4aff-a3d9-f02041fd19bb</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">4326d26b-fc8e-4579-90e4-e4ed7d02a3fe</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">e822c9c7-87df-407a-ad10-bc464c33552a</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">0a749f95-47f8-4c67-b7af-53878dd2f185</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыПриемаОтчетность1С</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

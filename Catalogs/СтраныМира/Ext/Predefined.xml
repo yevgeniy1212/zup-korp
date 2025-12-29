@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.18">
+	<Item id="4e127564-d74f-4dd9-bced-0327f0f4e061">
+		<Name>Россия</Name>
+		<Code>643</Code>
+		<Description>РОССИЯ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ad9d78e1-904b-452f-813c-70c741226d4b">
+		<Name>Армения</Name>
+		<Code>051</Code>
+		<Description>АРМЕНИЯ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0a12363f-fdf4-4bef-9dfe-ea43282c00c1">
+		<Name>Беларусь</Name>
+		<Code>112</Code>
+		<Description>БЕЛАРУСЬ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d12eb48b-7e53-41f3-b6ad-ee332180f033">
+		<Name>Казахстан</Name>
+		<Code>398</Code>
+		<Description>КАЗАХСТАН</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4173ccb7-0c7f-47d1-8384-c08944a17dc7">
+		<Name>Киргизия</Name>
+		<Code>417</Code>
+		<Description>КИРГИЗИЯ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

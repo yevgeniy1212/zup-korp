@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.18">
+	<Item id="4fce67c8-7e58-458e-9521-3c1bc1774cef">
+		<Name>БазовыйНалоговыйВычет</Name>
+		<Code/>
+		<Description>Базовый вычет</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="403b5c68-9458-4048-b5b1-cbb836b78ef4">
+		<Name>ВычетВОСМС</Name>
+		<Code/>
+		<Description>Вычет ВОСМС</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="faf5d711-01cd-4453-9530-991fc5d61d1f">
+		<Name>ВычетДляМногодетнойСемьиДляКаждогоРодителя</Name>
+		<Code/>
+		<Description>Вычет для многодетной семьи (для каждого родителя)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e1a4a2de-9ce8-46d1-a088-fd386687e997">
+		<Name>ВычетДляМногодетнойСемьиДляОдногоИзРодителей</Name>
+		<Code/>
+		<Description>Вычет для многодетной семьи (для одного из родителей)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1b2d4ccc-da80-416f-a6f9-475780e00510">
+		<Name>ВычетОПВ</Name>
+		<Code/>
+		<Description>Вычет ОПВ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a529352a-c4e1-42fc-8b82-942887cb70ba">
+		<Name>ВычетСО</Name>
+		<Code/>
+		<Description>Вычет СО</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3266f408-f5a0-4388-bfdb-24fb73185c02">
+		<Name>ДобровольныеПенсионныеВзносы</Name>
+		<Code/>
+		<Description>Добровольные пенсионные взносы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8c204e34-b6e1-489f-95cd-8d7fe24a21e5">
+		<Name>ПредварительнаяСуммаНалоговыхВычетов</Name>
+		<Code/>
+		<Description>Предварительная сумма прочих вычетов</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c65f6aef-733d-49da-aedd-c26ed2404a8b">
+		<Name>ВознагражденияПоЖилищнымЗаймам</Name>
+		<Code/>
+		<Description>Расходы на оплату вознаграждений по ипотечным жилищным займам</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4468b046-c67f-4057-8cb1-df3a933afb84">
+		<Name>НаОплатуМедицинскихУслуг</Name>
+		<Code/>
+		<Description>Расходы на оплату медицинских услуг</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="da326f3b-95aa-4568-b383-34f39b3d0fd0">
+		<Name>СоциальныйНалоговыйВычет1_2Группа</Name>
+		<Code/>
+		<Description>Социальный вычет (лицам с инвалидностью I и II группы)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="52fe6527-8863-40ef-b1a5-df8db77dfc1e">
+		<Name>СоциальныйНалоговыйВычет3Группа</Name>
+		<Code/>
+		<Description>Социальный вычет (лицам с инвалидностью III группа, участникам ВОВ)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3dc0ec27-3c54-44bb-90b1-fc67bafa8ce6">
+		<Name>СоциальныйНалоговыйВычетРодители</Name>
+		<Code/>
+		<Description>Социальный вычет (родителям лиц с инвалидностью, приемным родителям)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="75cc10cb-0985-4242-ab88-02b02409dc22">
+		<Name>Стандартный1МЗП</Name>
+		<Code/>
+		<Description>Стандартный 14 МРП (1 МЗП)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d1434f4a-22eb-49fe-9def-4d380a5dd7dc">
+		<Name>Стандартный75МЗПИнвалиды</Name>
+		<Code/>
+		<Description>Стандартный вычет (лицам с инвалидностью, участникам ВОВ)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c10bafcc-4c1b-42fd-89ab-3e8c3a7c21ef">
+		<Name>Стандартный75МЗПРодители</Name>
+		<Code/>
+		<Description>Стандартный вычет (родителям лиц с инвалидностью, приемным родителям)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

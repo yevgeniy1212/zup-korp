@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="НачислениеПериод" id="76">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начисление, период</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="НачислениеПериодРасширеннаяПодсказка" id="77"/>
+			<ChildItems>
+				<InputField name="Начисление" id="4">
+					<DataPath>Запись.Начисление</DataPath>
+					<ContextMenu name="НачислениеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НачислениеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Период" id="1">
+					<DataPath>Запись.Period</DataPath>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ВидДохода" id="7">
+			<DataPath>Запись.ВидДохода</DataPath>
+			<ContextMenu name="ВидДоходаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ВидДоходаРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="OnChange">ВидДоходаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="СпособыНалогообложенияДоходыНеПодлежащиеНалогообложению" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способы налогообложения доходы не подлежащие налогообложению</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СпособыНалогообложенияДоходыНеПодлежащиеНалогообложениюРасширеннаяПодсказка" id="41"/>
+			<ChildItems>
+				<UsualGroup name="СпособыНалогообложения" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Способы налогообложения</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="СпособыНалогообложенияРасширеннаяПодсказка" id="43"/>
+					<ChildItems>
+						<InputField name="СпособОбложенияИПН" id="10">
+							<DataPath>Запись.СпособОбложенияИПН</DataPath>
+							<ContextMenu name="СпособОбложенияИПНКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="СпособОбложенияИПНРасширеннаяПодсказка" id="12"/>
+							<Events>
+								<Event name="OnChange">СпособОбложенияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="СпособОбложенияОПВ" id="16">
+							<DataPath>Запись.СпособОбложенияОПВ</DataPath>
+							<ContextMenu name="СпособОбложенияОПВКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="СпособОбложенияОПВРасширеннаяПодсказка" id="18"/>
+							<Events>
+								<Event name="OnChange">СпособОбложенияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="СпособОбложенияСН" id="22">
+							<DataPath>Запись.СпособОбложенияСН</DataPath>
+							<ContextMenu name="СпособОбложенияСНКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="СпособОбложенияСНРасширеннаяПодсказка" id="24"/>
+							<Events>
+								<Event name="OnChange">СпособОбложенияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="СпособОбложенияСО" id="28">
+							<DataPath>Запись.СпособОбложенияСО</DataPath>
+							<ContextMenu name="СпособОбложенияСОКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="СпособОбложенияСОРасширеннаяПодсказка" id="30"/>
+							<Events>
+								<Event name="OnChange">СпособОбложенияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="СпособОбложенияОПВР" id="111">
+							<DataPath>Запись.СпособОбложенияОПВР</DataPath>
+							<ContextMenu name="СпособОбложенияОПВРКонтекстноеМеню" id="112"/>
+							<ExtendedTooltip name="СпособОбложенияОПВРРасширеннаяПодсказка" id="113"/>
+							<Events>
+								<Event name="OnChange">СпособОбложенияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="СпособОбложенияОППВ" id="34">
+							<DataPath>Запись.СпособОбложенияОППВ</DataPath>
+							<ContextMenu name="СпособОбложенияОППВКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="СпособОбложенияОППВРасширеннаяПодсказка" id="36"/>
+							<Events>
+								<Event name="OnChange">СпособОбложенияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="СпособОбложенияВОСМС" id="81">
+							<DataPath>Запись.СпособОбложенияВОСМС</DataPath>
+							<ContextMenu name="СпособОбложенияВОСМСКонтекстноеМеню" id="82"/>
+							<ExtendedTooltip name="СпособОбложенияВОСМСРасширеннаяПодсказка" id="83"/>
+							<Events>
+								<Event name="OnChange">СпособОбложенияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="СпособОбложенияООСМС" id="78">
+							<DataPath>Запись.СпособОбложенияООСМС</DataPath>
+							<ContextMenu name="СпособОбложенияООСМСКонтекстноеМеню" id="79"/>
+							<ExtendedTooltip name="СпособОбложенияООСМСРасширеннаяПодсказка" id="80"/>
+							<Events>
+								<Event name="OnChange">СпособОбложенияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="СпособОбложенияЕП" id="100">
+							<DataPath>Запись.СпособОбложенияЕП</DataPath>
+							<ContextMenu name="СпособОбложенияЕПКонтекстноеМеню" id="101"/>
+							<ExtendedTooltip name="СпособОбложенияЕПРасширеннаяПодсказка" id="102"/>
+							<Events>
+								<Event name="OnChange">СпособОбложенияПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ДоходыНеПодлежащиеНалогообложению" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доходы не подлежащие налогообложению</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ДоходыНеПодлежащиеНалогообложениюРасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<UsualGroup name="ИПН" id="46">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ИПН</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ИПНРасширеннаяПодсказка" id="47"/>
+							<ChildItems>
+								<InputField name="ДоходНеПодлежащийНалогообложениюИПН" id="13">
+									<DataPath>Запись.ДоходНеПодлежащийНалогообложениюИПН</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вид необлогаемого дохода</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДоходНеПодлежащийНалогообложениюИПНКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="ДоходНеПодлежащийНалогообложениюИПНРасширеннаяПодсказка" id="15"/>
+								</InputField>
+								<LabelDecoration name="ДекорацияИПН" id="48">
+									<ContextMenu name="ДекорацияИПНКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="ДекорацияИПНРасширеннаяПодсказка" id="50"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ОПВ" id="56">
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ОПВРасширеннаяПодсказка" id="57"/>
+							<ChildItems>
+								<InputField name="ДоходНеПодлежащийНалогообложениюОПВ" id="19">
+									<DataPath>Запись.ДоходНеПодлежащийНалогообложениюОПВ</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вид необлогаемого дохода</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДоходНеПодлежащийНалогообложениюОПВКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="ДоходНеПодлежащийНалогообложениюОПВРасширеннаяПодсказка" id="21"/>
+								</InputField>
+								<LabelDecoration name="ДекорацияОПВ" id="58">
+									<ContextMenu name="ДекорацияОПВКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ДекорацияОПВРасширеннаяПодсказка" id="60"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="СН" id="61">
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="СНРасширеннаяПодсказка" id="62"/>
+							<ChildItems>
+								<InputField name="ДоходНеПодлежащийНалогообложениюСН" id="25">
+									<DataPath>Запись.ДоходНеПодлежащийНалогообложениюСН</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вид необлогаемого дохода</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДоходНеПодлежащийНалогообложениюСНКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ДоходНеПодлежащийНалогообложениюСНРасширеннаяПодсказка" id="27"/>
+								</InputField>
+								<LabelDecoration name="ДекорацияСН" id="63">
+									<ContextMenu name="ДекорацияСНКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ДекорацияСНРасширеннаяПодсказка" id="65"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="СО" id="66">
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="СОРасширеннаяПодсказка" id="67"/>
+							<ChildItems>
+								<InputField name="ДоходНеПодлежащийНалогообложениюСО" id="31">
+									<DataPath>Запись.ДоходНеПодлежащийНалогообложениюСО</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вид необлогаемого дохода</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДоходНеПодлежащийНалогообложениюСОКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="ДоходНеПодлежащийНалогообложениюСОРасширеннаяПодсказка" id="33"/>
+								</InputField>
+								<LabelDecoration name="ДекорацияСО" id="68">
+									<ContextMenu name="ДекорацияСОКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="ДекорацияСОРасширеннаяПодсказка" id="70"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ОПВР" id="114">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ОПВР</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ОПВРРасширеннаяПодсказка" id="115"/>
+							<ChildItems>
+								<InputField name="ДоходНеПодлежащийНалогообложениюОПВР" id="116">
+									<DataPath>Запись.ДоходНеПодлежащийНалогообложениюОПВР</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вид необлогаемого дохода</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДоходНеПодлежащийНалогообложениюОПВРКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="ДоходНеПодлежащийНалогообложениюОПВРРасширеннаяПодсказка" id="118"/>
+								</InputField>
+								<LabelDecoration name="ДекорацияОПВР" id="119">
+									<ContextMenu name="ДекорацияОПВРКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="ДекорацияОПВРРасширеннаяПодсказка" id="121"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ОППВ" id="71">
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ОППВРасширеннаяПодсказка" id="72"/>
+							<ChildItems>
+								<InputField name="ДоходНеПодлежащийНалогообложениюОППВ" id="37">
+									<DataPath>Запись.ДоходНеПодлежащийНалогообложениюОППВ</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вид необлогаемого дохода</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДоходНеПодлежащийНалогообложениюОППВКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="ДоходНеПодлежащийНалогообложениюОППВРасширеннаяПодсказка" id="39"/>
+								</InputField>
+								<LabelDecoration name="ДекорацияОППВ" id="73">
+									<ContextMenu name="ДекорацияОППВКонтекстноеМеню" id="74"/>
+									<ExtendedTooltip name="ДекорацияОППВРасширеннаяПодсказка" id="75"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ВОСМС" id="84">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ВОСМС</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ВОСМСРасширеннаяПодсказка" id="85"/>
+							<ChildItems>
+								<InputField name="ДоходНеПодлежащийНалогообложениюВОСМС" id="88">
+									<DataPath>Запись.ДоходНеПодлежащийНалогообложениюВОСМС</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вид необлогаемого дохода</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДоходНеПодлежащийНалогообложениюВОСМСКонтекстноеМеню" id="89"/>
+									<ExtendedTooltip name="ДоходНеПодлежащийНалогообложениюВОСМСРасширеннаяПодсказка" id="90"/>
+								</InputField>
+								<LabelDecoration name="ДекорацияВОСМС" id="94">
+									<ContextMenu name="ДекорацияВОСМСКонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="ДекорацияВОСМСРасширеннаяПодсказка" id="96"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ООСМС" id="86">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ООСМС</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ООСМСРасширеннаяПодсказка" id="87"/>
+							<ChildItems>
+								<InputField name="ДоходНеПодлежащийНалогообложениюООСМС" id="91">
+									<DataPath>Запись.ДоходНеПодлежащийНалогообложениюООСМС</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вид необлогаемого дохода</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДоходНеПодлежащийНалогообложениюООСМСКонтекстноеМеню" id="92"/>
+									<ExtendedTooltip name="ДоходНеПодлежащийНалогообложениюООСМСРасширеннаяПодсказка" id="93"/>
+								</InputField>
+								<LabelDecoration name="ДекорацияООСМС" id="97">
+									<ContextMenu name="ДекорацияООСМСКонтекстноеМеню" id="98"/>
+									<ExtendedTooltip name="ДекорацияООСМСРасширеннаяПодсказка" id="99"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ЕП" id="103">
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ЕПРасширеннаяПодсказка" id="104"/>
+							<ChildItems>
+								<InputField name="ДоходНеПодлежащийНалогообложениюЕП" id="105">
+									<DataPath>Запись.ДоходНеПодлежащийНалогообложениюЕП</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вид необлогаемого дохода</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДоходНеПодлежащийНалогообложениюЕПКонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="ДоходНеПодлежащийНалогообложениюЕПРасширеннаяПодсказка" id="107"/>
+								</InputField>
+								<LabelDecoration name="ДекорацияЕП" id="108">
+									<ContextMenu name="ДекорацияЕПКонтекстноеМеню" id="109"/>
+									<ExtendedTooltip name="ДекорацияЕПРасширеннаяПодсказка" id="110"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.НалогообложениеНачислений</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="УчитыватьИПН" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учитывать ИПН</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="УчитыватьОПВ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учитывать ОПВ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="УчитыватьСН" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учитывать СН</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="УчитыватьСО" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учитывать СО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="УчитыватьОППВ" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учитывать ОППВ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="УчитыватьООСМС" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учитывать ООСМС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УчитыватьВОСМС" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учитывать ВОСМС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УчитыватьЕП" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учитывать ЕП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="УчитыватьОПВР" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учитывать ОППВ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

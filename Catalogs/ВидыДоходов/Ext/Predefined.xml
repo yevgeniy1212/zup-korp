@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.18">
+	<Item id="5a5a65e2-e2bf-48a0-859d-d5ee668240dd">
+		<Name>Вознаграждения</Name>
+		<Code/>
+		<Description>Вознаграждения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f3acb0d3-74da-4ef9-bf84-f05e743ef1d4">
+		<Name>Выигрыши</Name>
+		<Code/>
+		<Description>Выигрыши</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="66bcdb7e-02b4-4ace-909c-d45c1d071450">
+		<Name>Дивиденды</Name>
+		<Code/>
+		<Description>Дивиденды</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="427e5dbf-b6a9-458b-9a25-3f0a97404e5e">
+		<Name>ДоходСубъектаПредпринимательства</Name>
+		<Code/>
+		<Description>Доход субъекта предпринимательства</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="58a82d06-45e9-4e3d-9c8c-e379bc78e0ba">
+		<Name>ДоходыОтНалоговогоАгента</Name>
+		<Code/>
+		<Description>Доходы от налогового агента</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3fe9d0e0-25d8-4e05-ac36-43a190ba8e9e">
+		<Name>ДоходыОтРаботодателя</Name>
+		<Code/>
+		<Description>Доходы от работодателя</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="59186032-c94b-4faa-b6ba-45dd61e1e91a">
+		<Name>ПрочиеДоходы</Name>
+		<Code/>
+		<Description>Прочие доходы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

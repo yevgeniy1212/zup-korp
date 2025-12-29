@@ -1,0 +1,1525 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Налоги</v8:content>
+		</v8:item>
+	</Title>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаОк" id="73">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Ок</CommandName>
+				<ExtendedTooltip name="ФормаОкExtendedTooltip" id="75"/>
+			</Button>
+			<Button name="ФормаОтмена" id="74">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Отмена</CommandName>
+				<ExtendedTooltip name="ФормаОтменаExtendedTooltip" id="76"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОбщаяГруппа" id="72">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщаяГруппаExtendedTooltip" id="77"/>
+			<ChildItems>
+				<InputField name="ПериодСведенийСтрокой" id="206">
+					<DataPath>ПериодСведенийСтрокой</DataPath>
+					<Width>15</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ChoiceButton>true</ChoiceButton>
+					<SpinButton>true</SpinButton>
+					<ChoiceButtonPicture>
+						<xr:Ref>StdPicture.InputFieldCalendar</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</ChoiceButtonPicture>
+					<ContextMenu name="ПериодСведенийСтрокойКонтекстноеМеню" id="207"/>
+					<ExtendedTooltip name="ПериодСведенийСтрокойРасширеннаяПодсказка" id="208"/>
+					<Events>
+						<Event name="OnChange">ПериодСведенийСтрокойПриИзменении</Event>
+						<Event name="AutoComplete">ПериодСведенийСтрокойАвтоПодбор</Event>
+						<Event name="StartChoice">ПериодСведенийСтрокойНачалоВыбора</Event>
+						<Event name="Tuning">ПериодСведенийСтрокойРегулирование</Event>
+						<Event name="TextEditEnd">ПериодСведенийСтрокойОкончаниеВводаТекста</Event>
+					</Events>
+				</InputField>
+				<Pages name="ВычетыСтраницы" id="1">
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа информационной надписи И НДФЛ</v8:content>
+						</v8:item>
+					</Title>
+					<PagesRepresentation>None</PagesRepresentation>
+					<ExtendedTooltip name="ВычетыСтраницыExtendedTooltip" id="78"/>
+					<ChildItems>
+						<Page name="ДанныеОПримененииВычетовДо2018" id="2">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Данные о применении вычетов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Данные о применении вычетов до2018</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ChildItemsWidth>LeftWide</ChildItemsWidth>
+							<ExtendedTooltip name="ДанныеОПримененииВычетовДо2018РасширеннаяПодсказка" id="79"/>
+							<ChildItems>
+								<UsualGroup name="Колонки" id="3">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Колонки</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ChildItemsWidth>LeftWide</ChildItemsWidth>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="КолонкиExtendedTooltip" id="80"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаСтандартныеВычетыИПН" id="4">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Стандартные вычеты ИПН</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ExtendedTooltip name="ГруппаСтандартныеВычетыИПНРасширеннаяПодсказка" id="81"/>
+											<ChildItems>
+												<UsualGroup name="ЗаявлениеСтандартныеВычетыИПНГруппа" id="5">
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+														<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносов">true</xr:Value>
+														<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+													</UserVisible>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Заявление стандартные вычеты ИПН </v8:content>
+														</v8:item>
+													</Title>
+													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ЗаявлениеСтандартныеВычетыИПНГруппаРасширеннаяПодсказка" id="82"/>
+													<ChildItems>
+														<LabelField name="ЗаявлениеНаПредоставлениеСтандартныхВычетов" id="6">
+															<DataPath>ЗаявлениеНаПредоставлениеЛьготИВычетовИПНИнфо</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<Height>3</Height>
+															<VerticalStretch>false</VerticalStretch>
+															<TextColor>style:ПоясняющийТекст</TextColor>
+															<ContextMenu name="ЗаявлениеНаПредоставлениеСтандартныхВычетовКонтекстноеМеню" id="7"/>
+															<ExtendedTooltip name="ЗаявлениеНаПредоставлениеСтандартныхВычетовExtendedTooltip" id="83"/>
+														</LabelField>
+														<Button name="ИсправитьЗаявлениеНаНаПредоставлениеЛьготИВычетовИПН" id="145">
+															<Type>Hyperlink</Type>
+															<Width>25</Width>
+															<Height>3</Height>
+															<CommandName>Form.Command.ИсправитьЗаявлениеНаНаПредоставлениеЛьготИВычетовИПН</CommandName>
+															<ExtendedTooltip name="ИсправитьЗаявлениеНаНаПредоставлениеЛьготИВычетовИПНРасширеннаяПодсказка" id="146"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+												<CheckBoxField name="СтандартныеВычетыИПНПредоставлятьСтандартныйВычет" id="147">
+													<DataPath>СтандартныеВычетыИПНПредоставлятьСтандартныйВычет</DataPath>
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="СтандартныеВычетыИПНПредоставлятьСтандартныйВычетКонтекстноеМеню" id="148"/>
+													<ExtendedTooltip name="СтандартныеВычетыИПНПредоставлятьСтандартныйВычетРасширеннаяПодсказка" id="149"/>
+												</CheckBoxField>
+												<LabelField name="ЛичныйВычетИнфо" id="13">
+													<Visible>false</Visible>
+													<TitleLocation>None</TitleLocation>
+													<VerticalAlign>Top</VerticalAlign>
+													<Height>2</Height>
+													<VerticalStretch>false</VerticalStretch>
+													<TextColor>style:ПоясняющийТекст</TextColor>
+													<ContextMenu name="ЛичныйВычетИнфоКонтекстноеМеню" id="14"/>
+													<ExtendedTooltip name="ЛичныйВычетИнфоExtendedTooltip" id="87"/>
+												</LabelField>
+												<UsualGroup name="ГруппаЛьготаИПН" id="29">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Льгота ИПН</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalStretch>false</VerticalStretch>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ExtendedTooltip name="ГруппаЛьготаИПНРасширеннаяПодсказка" id="97"/>
+													<ChildItems>
+														<CheckBoxField name="ЛьготаИПНПредоставлятьЛьготу" id="175">
+															<DataPath>ЛьготаИПНПредоставлятьЛьготу</DataPath>
+															<TitleLocation>Right</TitleLocation>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ЛьготаИПНПредоставлятьЛьготуКонтекстноеМеню" id="176"/>
+															<ExtendedTooltip name="ЛьготаИПНПредоставлятьЛьготуРасширеннаяПодсказка" id="177"/>
+														</CheckBoxField>
+														<InputField name="ЛьготаИПНКатегорияЛицаПолучателяЛьготы" id="178">
+															<DataPath>ЛьготаИПНКатегорияЛицаПолучателяЛьготы</DataPath>
+															<ContextMenu name="ЛьготаИПНКатегорияЛицаПолучателяЛьготыКонтекстноеМеню" id="179"/>
+															<ExtendedTooltip name="ЛьготаИПНКатегорияЛицаПолучателяЛьготыРасширеннаяПодсказка" id="180"/>
+														</InputField>
+														<InputField name="ЛьготаИПНДействуетДо" id="181">
+															<DataPath>ЛьготаИПНДействуетДо</DataPath>
+															<ContextMenu name="ЛьготаИПНДействуетДоКонтекстноеМеню" id="182"/>
+															<ExtendedTooltip name="ЛьготаИПНДействуетДоРасширеннаяПодсказка" id="183"/>
+														</InputField>
+														<InputField name="ЛьготаИПНДокументПодтверждающийПравоНаЛьготу" id="184">
+															<DataPath>ЛьготаИПНДокументПодтверждающийПравоНаЛьготу</DataPath>
+															<ContextMenu name="ЛьготаИПНДокументПодтверждающийПравоНаЛьготуКонтекстноеМеню" id="185"/>
+															<ExtendedTooltip name="ЛьготаИПНДокументПодтверждающийПравоНаЛьготуРасширеннаяПодсказка" id="186"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ПрочиеВычетыИПНГруппа" id="15">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Прочие вычеты ИПН</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ExtendedTooltip name="ПрочиеВычетыИПНГруппаРасширеннаяПодсказка" id="88"/>
+													<ChildItems>
+														<Table name="ПрочиеВычетыФизическихЛицИПН" id="150">
+															<Representation>List</Representation>
+															<CommandBarLocation>None</CommandBarLocation>
+															<AutoInsertNewRow>true</AutoInsertNewRow>
+															<EnableStartDrag>true</EnableStartDrag>
+															<EnableDrag>true</EnableDrag>
+															<FileDragMode>AsFile</FileDragMode>
+															<DataPath>ПрочиеВычетыФизическихЛицИПН</DataPath>
+															<RowFilter xsi:nil="true"/>
+															<ContextMenu name="ПрочиеВычетыФизическихЛицИПНКонтекстноеМеню" id="151"/>
+															<AutoCommandBar name="ПрочиеВычетыФизическихЛицИПНКоманднаяПанель" id="152"/>
+															<ExtendedTooltip name="ПрочиеВычетыФизическихЛицИПНРасширеннаяПодсказка" id="153"/>
+															<SearchStringAddition name="ПрочиеВычетыФизическихЛицИПНСтрокаПоиска" id="154">
+																<AdditionSource>
+																	<Item>ПрочиеВычетыФизическихЛицИПН</Item>
+																	<Type>SearchStringRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="ПрочиеВычетыФизическихЛицИПНСтрокаПоискаКонтекстноеМеню" id="155"/>
+																<ExtendedTooltip name="ПрочиеВычетыФизическихЛицИПНСтрокаПоискаРасширеннаяПодсказка" id="156"/>
+															</SearchStringAddition>
+															<ViewStatusAddition name="ПрочиеВычетыФизическихЛицИПНСостояниеПросмотра" id="157">
+																<AdditionSource>
+																	<Item>ПрочиеВычетыФизическихЛицИПН</Item>
+																	<Type>ViewStatusRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="ПрочиеВычетыФизическихЛицИПНСостояниеПросмотраКонтекстноеМеню" id="158"/>
+																<ExtendedTooltip name="ПрочиеВычетыФизическихЛицИПНСостояниеПросмотраРасширеннаяПодсказка" id="159"/>
+															</ViewStatusAddition>
+															<SearchControlAddition name="ПрочиеВычетыФизическихЛицИПНУправлениеПоиском" id="160">
+																<AdditionSource>
+																	<Item>ПрочиеВычетыФизическихЛицИПН</Item>
+																	<Type>SearchControl</Type>
+																</AdditionSource>
+																<ContextMenu name="ПрочиеВычетыФизическихЛицИПНУправлениеПоискомКонтекстноеМеню" id="161"/>
+																<ExtendedTooltip name="ПрочиеВычетыФизическихЛицИПНУправлениеПоискомРасширеннаяПодсказка" id="162"/>
+															</SearchControlAddition>
+															<ChildItems>
+																<InputField name="ПрочиеВычетыФизическихЛицИПНВидВычетаИПН" id="163">
+																	<DataPath>ПрочиеВычетыФизическихЛицИПН.ВидВычетаИПН</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="ПрочиеВычетыФизическихЛицИПНВидВычетаИПНКонтекстноеМеню" id="164"/>
+																	<ExtendedTooltip name="ПрочиеВычетыФизическихЛицИПНВидВычетаИПНРасширеннаяПодсказка" id="165"/>
+																</InputField>
+																<InputField name="ПрочиеВычетыФизическихЛицИПНДействуетПо" id="166">
+																	<DataPath>ПрочиеВычетыФизическихЛицИПН.ДействуетПо</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="ПрочиеВычетыФизическихЛицИПНДействуетПоКонтекстноеМеню" id="167"/>
+																	<ExtendedTooltip name="ПрочиеВычетыФизическихЛицИПНДействуетПоРасширеннаяПодсказка" id="168"/>
+																</InputField>
+																<InputField name="ПрочиеВычетыФизическихЛицИПНРазмер" id="169">
+																	<DataPath>ПрочиеВычетыФизическихЛицИПН.Размер</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="ПрочиеВычетыФизическихЛицИПНРазмерКонтекстноеМеню" id="170"/>
+																	<ExtendedTooltip name="ПрочиеВычетыФизическихЛицИПНРазмерРасширеннаяПодсказка" id="171"/>
+																</InputField>
+																<InputField name="ПрочиеВычетыФизическихЛицИПНДокументПодтверждающийПравоНаВычет" id="172">
+																	<DataPath>ПрочиеВычетыФизическихЛицИПН.ДокументПодтверждающийПравоНаВычет</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="ПрочиеВычетыФизическихЛицИПНДокументПодтверждающийПравоНаВычетКонтекстноеМеню" id="173"/>
+																	<ExtendedTooltip name="ПрочиеВычетыФизическихЛицИПНДокументПодтверждающийПравоНаВычетРасширеннаяПодсказка" id="174"/>
+																</InputField>
+															</ChildItems>
+														</Table>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="НовыеДокументыГруппа" id="26">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Новые документы группа</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="НовыеДокументыГруппаExtendedTooltip" id="94"/>
+													<ChildItems>
+														<Button name="ВвестиНовоеЗаявлениеНаПредоставлениеЛьготИВычетовИПН1" id="141">
+															<Type>Hyperlink</Type>
+															<Width>25</Width>
+															<Height>3</Height>
+															<CommandName>Form.Command.ВвестиНовоеЗаявлениеНаПредоставлениеЛьготИВычетовИПН</CommandName>
+															<ExtendedTooltip name="ВвестиНовоеЗаявлениеНаПредоставлениеЛьготИВычетовИПН1РасширеннаяПодсказка" id="142"/>
+														</Button>
+														<Button name="ВвестиПрекращениеПредоставленияЛьготИВычетовИПН" id="143">
+															<Type>Hyperlink</Type>
+															<Width>25</Width>
+															<Height>3</Height>
+															<CommandName>Form.Command.ВвестиПрекращениеПредоставленияЛьготИВычетовИПН</CommandName>
+															<ExtendedTooltip name="ВвестиПрекращениеПредоставленияЛьготИВычетовИПНРасширеннаяПодсказка" id="144"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+						<Page name="ДанныеОПримененииВычетов" id="204">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Данные о применении вычетов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Данные о применении вычетов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ДанныеОПримененииВычетовРасширеннаяПодсказка" id="205"/>
+							<ChildItems>
+								<UsualGroup name="ЗаявлениеВычетыИПНГруппа" id="236">
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+										<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносов">true</xr:Value>
+										<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+									</UserVisible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заявление стандартные вычеты ИПН </v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заявление вычеты ИПНГруппа</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ЗаявлениеВычетыИПНГруппаРасширеннаяПодсказка" id="237"/>
+									<ChildItems>
+										<LabelField name="ЗаявлениеНаПредоставлениеСтандартныхВычетов1" id="238">
+											<DataPath>ЗаявлениеНаПредоставлениеЛьготИВычетовИПНИнфо</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<Height>3</Height>
+											<VerticalStretch>false</VerticalStretch>
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<ContextMenu name="ЗаявлениеНаПредоставлениеСтандартныхВычетов1КонтекстноеМеню" id="239"/>
+											<ExtendedTooltip name="ЗаявлениеНаПредоставлениеСтандартныхВычетов1РасширеннаяПодсказка" id="240"/>
+										</LabelField>
+										<Button name="ИсправитьЗаявлениеНаНаПредоставлениеЛьготИВычетовИПН1" id="241">
+											<Type>Hyperlink</Type>
+											<Width>25</Width>
+											<Height>3</Height>
+											<CommandName>Form.Command.ИсправитьЗаявлениеНаНаПредоставлениеЛьготИВычетовИПН</CommandName>
+											<ExtendedTooltip name="ИсправитьЗаявлениеНаНаПредоставлениеЛьготИВычетовИПН1РасширеннаяПодсказка" id="242"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<Table name="Вычеты" id="209">
+									<Representation>List</Representation>
+									<CommandBarLocation>None</CommandBarLocation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>Вычеты</DataPath>
+									<CommandSet>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+									</CommandSet>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ВычетыКонтекстноеМеню" id="210"/>
+									<AutoCommandBar name="ВычетыКоманднаяПанель" id="211"/>
+									<ExtendedTooltip name="ВычетыРасширеннаяПодсказка" id="212"/>
+									<SearchStringAddition name="ВычетыСтрокаПоиска" id="213">
+										<AdditionSource>
+											<Item>Вычеты</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВычетыСтрокаПоискаКонтекстноеМеню" id="214"/>
+										<ExtendedTooltip name="ВычетыСтрокаПоискаРасширеннаяПодсказка" id="215"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ВычетыСостояниеПросмотра" id="216">
+										<AdditionSource>
+											<Item>Вычеты</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВычетыСостояниеПросмотраКонтекстноеМеню" id="217"/>
+										<ExtendedTooltip name="ВычетыСостояниеПросмотраРасширеннаяПодсказка" id="218"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ВычетыУправлениеПоиском" id="219">
+										<AdditionSource>
+											<Item>Вычеты</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ВычетыУправлениеПоискомКонтекстноеМеню" id="220"/>
+										<ExtendedTooltip name="ВычетыУправлениеПоискомРасширеннаяПодсказка" id="221"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">ВычетыВыбор</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="ВычетыВидВычетаИПН" id="222">
+											<DataPath>Вычеты.ВидВычетаИПН</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ВычетыВидВычетаИПНКонтекстноеМеню" id="223"/>
+											<ExtendedTooltip name="ВычетыВидВычетаИПНРасширеннаяПодсказка" id="224"/>
+										</InputField>
+										<LabelField name="ВычетыРасшифровка" id="233">
+											<DataPath>Вычеты.Расшифровка</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>График</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<CellHyperlink>true</CellHyperlink>
+											<Hiperlink>true</Hiperlink>
+											<ContextMenu name="ВычетыРасшифровкаКонтекстноеМеню" id="234"/>
+											<ExtendedTooltip name="ВычетыРасшифровкаРасширеннаяПодсказка" id="235"/>
+										</LabelField>
+										<InputField name="ВычетыДействуетПо" id="225">
+											<DataPath>Вычеты.ДействуетПо</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ВычетыДействуетПоКонтекстноеМеню" id="226"/>
+											<ExtendedTooltip name="ВычетыДействуетПоРасширеннаяПодсказка" id="227"/>
+										</InputField>
+										<CheckBoxField name="ВычетыПредоставлятьВычет" id="249">
+											<DataPath>Вычеты.ПредоставлятьВычет</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ВычетыПредоставлятьВычетКонтекстноеМеню" id="250"/>
+											<ExtendedTooltip name="ВычетыПредоставлятьВычетРасширеннаяПодсказка" id="251"/>
+										</CheckBoxField>
+										<InputField name="ВычетыДокументПодтверждающийПравоНаВычет" id="228">
+											<DataPath>Вычеты.ДокументПодтверждающийПравоНаВычет</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ВычетыДокументПодтверждающийПравоНаВычетКонтекстноеМеню" id="229"/>
+											<ExtendedTooltip name="ВычетыДокументПодтверждающийПравоНаВычетРасширеннаяПодсказка" id="230"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<UsualGroup name="НовыеДокументыГруппа1" id="243">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Новые документы группа</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="НовыеДокументыГруппа1РасширеннаяПодсказка" id="244"/>
+									<ChildItems>
+										<Button name="ВвестиНовоеЗаявлениеНаПредоставлениеЛьготИВычетовИПН2" id="245">
+											<Type>Hyperlink</Type>
+											<Width>25</Width>
+											<Height>3</Height>
+											<CommandName>Form.Command.ВвестиНовоеЗаявлениеНаПредоставлениеЛьготИВычетовИПН</CommandName>
+											<ExtendedTooltip name="ВвестиНовоеЗаявлениеНаПредоставлениеЛьготИВычетовИПН2РасширеннаяПодсказка" id="246"/>
+										</Button>
+										<Button name="ВвестиПрекращениеПредоставленияЛьготИВычетовИПН1" id="247">
+											<Type>Hyperlink</Type>
+											<Width>25</Width>
+											<Height>3</Height>
+											<CommandName>Form.Command.ВвестиПрекращениеПредоставленияЛьготИВычетовИПН</CommandName>
+											<ExtendedTooltip name="ВвестиПрекращениеПредоставленияЛьготИВычетовИПН1РасширеннаяПодсказка" id="248"/>
+										</Button>
+										<Button name="ВсеЗаявленияНаВычеты" id="252">
+											<Type>Hyperlink</Type>
+											<Height>2</Height>
+											<CommandName>Form.Command.ВсеЗаявленияНаВычеты</CommandName>
+											<ExtendedTooltip name="ВсеЗаявленияНаВычетыExtendedTooltip" id="253"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+						<Page name="ИнфоНадписьОПримененииВычетов" id="48">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Инфонадпись</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ИнфоНадписьОПримененииВычетовExtendedTooltip" id="109"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаИнфо" id="49">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа инфо</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа инфо</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИнфоРасширеннаяПодсказка" id="110"/>
+									<ChildItems>
+										<Button name="ВвестиНовоеЗаявлениеНаПредоставлениеЛьготИВычетовИПН" id="139">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ВвестиНовоеЗаявлениеНаПредоставлениеЛьготИВычетовИПН</CommandName>
+											<ExtendedTooltip name="ВвестиНовоеЗаявлениеНаПредоставлениеЛьготИВычетовИПНРасширеннаяПодсказка" id="140"/>
+										</Button>
+										<Button name="ВсеЗаявленияНаВычеты1" id="254">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ВсеЗаявленияНаВычеты</CommandName>
+											<ExtendedTooltip name="ВсеЗаявленияНаВычеты1РасширеннаяПодсказка" id="255"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+				<UsualGroup name="СтатусДоходыГруппа" id="57">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус доходы группа</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ChildItemsWidth>LeftWidest</ChildItemsWidth>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="СтатусДоходыГруппаExtendedTooltip" id="116"/>
+					<ChildItems>
+						<UsualGroup name="СтатусНалогоплательщикаГруппа" id="58">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Статус налогоплательщика</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="СтатусНалогоплательщикаГруппаExtendedTooltip" id="117"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаСтатусНалогоплательщикаПризнакиНалогоплательщика" id="193">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус налогоплательщика, признаки налогоплательщика</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСтатусНалогоплательщикаПризнакиНалогоплательщикаРасширеннаяПодсказка" id="194"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаСтатусПериод" id="202">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Настройки статуса и периода</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСтатусПериодРасширеннаяПодсказка" id="203"/>
+											<ChildItems>
+												<InputField name="СтатусФизическихЛицКакНалогоплательщиковСтатус" id="131">
+													<DataPath>СтатусФизическихЛицКакНалогоплательщиков.Статус</DataPath>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ContextMenu name="СтатусФизическихЛицКакНалогоплательщиковСтатусКонтекстноеМеню" id="132"/>
+													<ExtendedTooltip name="СтатусФизическихЛицКакНалогоплательщиковСтатусРасширеннаяПодсказка" id="133"/>
+													<Events>
+														<Event name="OnChange">СтатусФизическихЛицКакНалогоплательщиковСтатусПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="СтатусФизическихЛицКакНалогоплательщиковПериодСтрокой" id="134">
+													<DataPath>СтатусФизическихЛицКакНалогоплательщиковПериодСтрокой</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Установлен с</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ChoiceButton>true</ChoiceButton>
+													<SpinButton>true</SpinButton>
+													<ChoiceButtonPicture>
+														<xr:Ref>StdPicture.InputFieldCalendar</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</ChoiceButtonPicture>
+													<ContextMenu name="СтатусФизическихЛицКакНалогоплательщиковПериодСтрокойКонтекстноеМеню" id="135"/>
+													<ExtendedTooltip name="СтатусФизическихЛицКакНалогоплательщиковПериодСтрокойРасширеннаяПодсказка" id="136"/>
+													<Events>
+														<Event name="OnChange">СтатусФизическихЛицКакНалогоплательщиковПериодСтрокойПриИзменении</Event>
+														<Event name="AutoComplete">СтатусФизическихЛицКакНалогоплательщиковПериодСтрокойАвтоПодбор</Event>
+														<Event name="StartChoice">СтатусФизическихЛицКакНалогоплательщиковПериодСтрокойНачалоВыбора</Event>
+														<Event name="Tuning">СтатусФизическихЛицКакНалогоплательщиковПериодСтрокойРегулирование</Event>
+														<Event name="TextEditEnd">СтатусФизическихЛицКакНалогоплательщиковПериодСтрокойОкончаниеВводаТекста</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаСоциальноеСтрахование" id="200">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Социальное страхование</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСоциальноеСтрахованиеРасширеннаяПодсказка" id="201"/>
+											<ChildItems>
+												<CheckBoxField name="СтатусФизическихЛицКакНалогоплательщиковПодлежитСоциальномуСтрахованию" id="190">
+													<DataPath>СтатусФизическихЛицКакНалогоплательщиков.ПодлежитСоциальномуСтрахованию</DataPath>
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="СтатусФизическихЛицКакНалогоплательщиковПодлежитСоциальномуСтрахованиюКонтекстноеМеню" id="191"/>
+													<ExtendedTooltip name="СтатусФизическихЛицКакНалогоплательщиковПодлежитСоциальномуСтрахованиюРасширеннаяПодсказка" id="192"/>
+													<Events>
+														<Event name="OnChange">СтатусФизическихЛицКакНалогоплательщиковПодлежитСоциальномуСтрахованиюПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<CheckBoxField name="СтатусФизическихЛицКакНалогоплательщиковПодлежитСоциальномуМедицинскомуСтрахованию" id="197">
+													<DataPath>СтатусФизическихЛицКакНалогоплательщиков.ПодлежитСоциальномуМедицинскомуСтрахованию</DataPath>
+													<TitleLocation>Right</TitleLocation>
+													<TitleHeight>2</TitleHeight>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="СтатусФизическихЛицКакНалогоплательщиковПодлежитСоциальномуМедицинскомуСтрахованиюКонтекстноеМеню" id="198"/>
+													<ExtendedTooltip name="СтатусФизическихЛицКакНалогоплательщиковПодлежитСоциальномуМедицинскомуСтрахованиюРасширеннаяПодсказка" id="199"/>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+										<CheckBoxField name="СтатусФизическихЛицКакНалогоплательщиковИмеетПравоНаПенсионноеОбеспечение" id="187">
+											<DataPath>СтатусФизическихЛицКакНалогоплательщиков.ИмеетПравоНаПенсионноеОбеспечение</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СтатусФизическихЛицКакНалогоплательщиковИмеетПравоНаПенсионноеОбеспечениеКонтекстноеМеню" id="188"/>
+											<ExtendedTooltip name="СтатусФизическихЛицКакНалогоплательщиковИмеетПравоНаПенсионноеОбеспечениеРасширеннаяПодсказка" id="189"/>
+											<Events>
+												<Event name="OnChange">СтатусФизическихЛицКакНалогоплательщиковИмеетПравоНаПенсионноеОбеспечениеПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<Button name="СтатусФизическихЛицКакНалогоплательщиковИстория" id="137">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.СтатусФизическихЛицКакНалогоплательщиковИстория</CommandName>
+									<ExtendedTooltip name="СтатусФизическихЛицКакНалогоплательщиковИсторияРасширеннаяПодсказка" id="138"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="ДоходыСПредыдущегоМестаРаботы" id="195">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ДоходыСПредыдущегоМестаРаботы</CommandName>
+							<ExtendedTooltip name="ДоходыСПредыдущегоМестаРаботыExtendedTooltip" id="196"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ЗаявлениеНаПредоставлениеЛьготИВычетовИПН" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заявление на предоставление льгот и вычетов ИПН</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.ЗаявлениеНаПредоставлениеВычетовИПН</v8:Type>
+			</Type>
+			<View>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносов">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ЧтениеНалоговИВзносов">true</xr:Value>
+			</View>
+			<Edit>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносов">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Edit>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНачислениеЗарплаты</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="ЗаявлениеНаПредоставлениеЛьготИВычетовИПНИнфо" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заявление на предоставление стандартных вычетов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>200</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<View>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносов">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ЧтениеНалоговИВзносов">true</xr:Value>
+			</View>
+			<Edit>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносов">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Edit>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНачислениеЗарплаты</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="ПрочиеВычетыФизическихЛицИПН" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочие вычеты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<View>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносов">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ЧтениеНалоговИВзносов">true</xr:Value>
+			</View>
+			<Edit>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносов">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ЧтениеНалоговИВзносов">true</xr:Value>
+			</Edit>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНачислениеЗарплаты</Item>
+			</FunctionalOptions>
+			<Columns>
+				<Column name="ВидВычетаИПН" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид вычета ИПН</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыВычетовИПН</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДействуетПо" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Действует по</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Размер" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Размер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДокументПодтверждающийПравоНаВычет" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ подтверждающий право на вычет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СтандартныеВычетыИПНПредоставлятьСтандартныйВычет" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предоставлять стандартный вычет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<View>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносов">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ЧтениеНалоговИВзносов">true</xr:Value>
+			</View>
+			<Edit>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносов">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Edit>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНачислениеЗарплаты</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="СтатусФизическихЛицКакНалогоплательщиков" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус физических лиц как налогоплательщиков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.СтатусФизическихЛицКакНалогоплательщиков</v8:Type>
+			</Type>
+			<View>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеДанныхФизическихЛицЗарплатаКадрыЗУПК">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ЧтениеДанныхФизическихЛицЗарплатаКадрыЗУПК">true</xr:Value>
+			</View>
+			<Edit>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеДанныхФизическихЛицЗарплатаКадрыЗУПК">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносовЗУПК">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Edit>
+			<SavedData>true</SavedData>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНачислениеЗарплаты</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="СтатусФизическихЛицКакНалогоплательщиковПериодСтрокой" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус физических лиц как налогоплательщиков период строкой</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>15</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<View>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеДанныхФизическихЛицЗарплатаКадрыЗУПК">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ЧтениеДанныхФизическихЛицЗарплатаКадрыЗУПК">true</xr:Value>
+				<xr:Value name="Role.ЧтениеНалоговИВзносов">true</xr:Value>
+			</View>
+			<Edit>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеДанныхФизическихЛицЗарплатаКадрыЗУПК">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносовЗУПК">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Edit>
+			<SavedData>true</SavedData>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНачислениеЗарплаты</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="СтатусФизическихЛицКакНалогоплательщиковПрежняя" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус физических лиц как налогоплательщиков прежняя</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+			<View>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеДанныхФизическихЛицЗарплатаКадрыЗУПК">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносов">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ЧтениеНалоговИВзносов">true</xr:Value>
+			</View>
+			<Edit>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеДанныхФизическихЛицЗарплатаКадрыЗУПК">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносовЗУПК">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Edit>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНачислениеЗарплаты</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="СтатусФизическихЛицКакНалогоплательщиковНоваяЗапись" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус физических лиц как налогоплательщиков новая запись</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Edit>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносовЗУПК">true</xr:Value>
+			</Edit>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНачислениеЗарплаты</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="СтатусФизическихЛицКакНалогоплательщиковНаборЗаписейПрочитан" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус физических лиц как налогоплательщиков набор записей прочитан</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Edit>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносовЗУПК">true</xr:Value>
+			</Edit>
+		</Attribute>
+		<Attribute name="СтатусФизическихЛицКакНалогоплательщиковНаборЗаписей" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус физических лиц как налогоплательщиков набор записей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.СтатусФизическихЛицКакНалогоплательщиков</v8:Type>
+			</Type>
+			<View>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеДанныхФизическихЛицЗарплатаКадрыЗУПК">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ЧтениеДанныхФизическихЛицЗарплатаКадрыЗУПК">true</xr:Value>
+				<xr:Value name="Role.ЧтениеНалоговИВзносов">true</xr:Value>
+			</View>
+			<Edit>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеДанныхФизическихЛицЗарплатаКадрыЗУПК">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносовЗУПК">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Edit>
+		</Attribute>
+		<Attribute name="ВычетыПредоставлялись" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вычеты предоставлялись</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЛьготаИПНПредоставлятьЛьготу" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предоставлять льготу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<View>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносов">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ЧтениеНалоговИВзносов">true</xr:Value>
+			</View>
+			<Edit>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносов">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Edit>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНачислениеЗарплаты</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="ЛьготаИПНКатегорияЛицаПолучателяЛьготы" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Категория лица получателя льготы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.КатегорииЛицПолучателейЛьготИПН</v8:Type>
+			</Type>
+			<View>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносов">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ЧтениеНалоговИВзносов">true</xr:Value>
+			</View>
+			<Edit>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносов">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Edit>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНачислениеЗарплаты</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="ФизическоеЛицоСсылка" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Физическое лицо ссылка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущаяОрганизация" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Организация" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ФизическоеЛицоЗаблокировано" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Физическое лицо заблокировано</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЦветСтиляПоясняющийОшибкуТекст" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет стиля поясняющий ошибку текст</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЦветСтиляРасширеннойПодсказки" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет стиля расширенной подсказки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаПриема" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата приема</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтатусФизическихЛицКакНалогоплательщиковПериод" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус физических лиц как налогоплательщиков период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<Edit>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносовЗУПК">true</xr:Value>
+			</Edit>
+		</Attribute>
+		<Attribute name="ДоступноИзменениеНалоговИВзносов" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доступно изменение налогов и взносов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СотрудникСсылка" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудник ссылка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СозданиеНового" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создание нового</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ГоловнаяОрганизация" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Головная организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЛьготаИПНДействуетДо" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Действует до</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЛьготаИПНДокументПодтверждающийПравоНаЛьготу" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ подтверждающий право на льготу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПериодСведений" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период сведений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПериодСведенийСтрокой" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период сведений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Вычеты" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вычеты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ВидВычетаИПН" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид вычета ИПН</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыВычетовИПН</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДействуетПо" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Действует по</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДокументПодтверждающийПравоНаВычет" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ, подтверждающий право на вычет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Расшифровка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расшифровка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПредоставлятьВычет" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предоставлять вычет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СтатусФизическихЛицКакНалогоплательщиковИстория" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История изменения статуса налогоплательщика</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус физических лиц как налогоплательщиков (история)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеДанныхФизическихЛицЗарплатаКадрыЗУПК">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносов">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ЧтениеНалоговИВзносов">true</xr:Value>
+			</Use>
+			<Action>СтатусФизическихЛицКакНалогоплательщиковИстория</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНачислениеЗарплаты</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВвестиНовоеЗаявлениеНаПредоставлениеЛьготИВычетовИПН" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ввести новое заявление на предоставление льгот и вычетов ИПН</v8:content>
+				</v8:item>
+			</Title>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносов">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Use>
+			<Action>ВвестиНовоеЗаявлениеНаПредоставлениеЛьготИВычетовИПН</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНачислениеЗарплаты</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВвестиПрекращениеПредоставленияЛьготИВычетовИПН" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прекратить предоставление льгот и вычетов ИПН</v8:content>
+				</v8:item>
+			</Title>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносов">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Use>
+			<Action>ВвестиПрекращениеПредоставленияЛьготИВычетовИПН</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНачислениеЗарплаты</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ИсправитьЗаявлениеНаНаПредоставлениеЛьготИВычетовИПН" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исправить заявление на предоставление льгот и вычетов ИПН</v8:content>
+				</v8:item>
+			</Title>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносов">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Use>
+			<Action>ИсправитьЗаявлениеНаНаПредоставлениеЛьготИВычетовИПН</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНачислениеЗарплаты</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Ок" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>OK</v8:content>
+				</v8:item>
+			</Title>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеДанныхФизическихЛицЗарплатаКадрыЗУПК">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеНалоговИВзносов">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Use>
+			<Action>Ок</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Отмена" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Отмена</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДоходыСПредыдущегоМестаРаботы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доходы с предыдущего места работы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доходы с предыдущего места работы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДоходыСПредыдущегоМестаРаботы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВсеЗаявленияНаВычеты" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все заявления на вычеты</v8:content>
+				</v8:item>
+			</Title>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ЧтениеНалоговИВзносов">true</xr:Value>
+			</Use>
+			<Action>ВсеЗаявленияНаВычеты</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНачислениеЗарплаты</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="АдресВХранилище">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ФизическоеЛицоСсылка">
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="СотрудникСсылка">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="СозданиеНового">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

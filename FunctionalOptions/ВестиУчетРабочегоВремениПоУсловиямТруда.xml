@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<FunctionalOption uuid="e8f3bb80-af5c-4cfd-b93e-c6f4d5ac9f63">
+		<Properties>
+			<Name>ВестиУчетРабочегоВремениПоУсловиямТруда</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вести учет рабочего времени по условиям труда</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Location>InformationRegister.НастройкиЗарплатаКадрыРасширенная.Resource.ВестиУчетРабочегоВремениПоУсловиямТруда</Location>
+			<PrivilegedGetMode>true</PrivilegedGetMode>
+			<Content>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда1</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда2</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда3</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда4</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда5</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда6</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда7</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда8</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда9</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда10</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда11</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда12</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда13</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда14</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда15</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда16</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда17</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда18</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда19</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда20</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда21</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда22</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда23</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда24</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда25</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда26</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда27</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда28</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда29</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда30</xr:Object>
+				<xr:Object>Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.УсловияТруда31</xr:Object>
+				<xr:Object>Catalog.УсловияТруда</xr:Object>
+				<xr:Object>InformationRegister.ГрафикиРаботыПоВидамВремени.Dimension.УсловияТруда</xr:Object>
+				<xr:Object>AccumulationRegister.ДанныеТабельногоУчетаРабочегоВремениСотрудников.Dimension.УсловияТруда</xr:Object>
+			</Content>
+		</Properties>
+	</FunctionalOption>
+</MetaDataObject>

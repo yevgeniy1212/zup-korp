@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Subsystem uuid="d5f1d463-85c4-4196-af17-0db599c04be2">
+		<Properties>
+			<Name>УчетНалоговВзносовОтчислений</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учет налогов взносов отчислений</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыНалогообложенияДоходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыДоходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДоходыНеПодлежащиеНалогообложениюЧастично</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НалогообложениеНачислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ПериодыРасчетаВычетовИКорректировокДоходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КатегорииЛицПолучателейЛьготИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РазмерыЛьготИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыФизическихЛицНалогоплательщиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаявлениеНаПредоставлениеВычетовИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыВычетовИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПрименениеВычетовИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВычетыФизическихЛицИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЛьготыФизическихЛицИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.НалогиВзносыРасчетыНалогоплательщиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПрочиеВычетыФизическихЛицИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.СведенияОбИсчисленииВычетовИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПрекращениеПредоставленияВычетовИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользуетсяОППВ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.СведенияОДоходахФизическихЛиц</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыНалоговВзносовОтчислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СведенияОСтавкахИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ПлательщикОППВЗарплатаКадры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СведенияОСтавкахНалоговСборовОтчислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.СведенияОбИсчисленииНалоговВзносовОтчислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.НалогиВзносыОтчисленияРасчетыСБюджетомИФондами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СтатусФизическихЛицКакНалогоплательщиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВедомостьНаПеречислениеВзносовОтчислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ВестиУчетРабочегоВремениПоУсловиямТруда</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.СведенияОНеоблагаемыхДоходахФизическихЛиц</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СведенияОНезачисленныхВзносахОтчислениях</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПеняПоВзносамИОтчислениям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ПениПоВзносамИОтчислениям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РегистрНалоговогоУчетаПоИПНиСН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПорядокОкругленияРезультатовРасчетаЗарплаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыПредоставленияВычетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КоэффициентыСтавкиРефинансированияНБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.УдержаниеНалоговВзносовПоНУ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СведенияОПенсионномОбеспеченииФизическихЛиц</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СведенияОФизическихЛицахУчастникахВОВ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СрокиПеречисленияВзносовИОтчислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УчетнаяПолитикаПоНалоговомуУчету</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РазмерыДоходовНеПодлежащихНалогообложениюЧастично</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РазмерыВычетовИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПрименениеВычетовПоВидамДохода</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ПодробнееОРасчетеНалогаВзносаОтчисления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СтруктураЗадолженностиВзносовИОтчислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ЕПКомпоненты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ПорядокОбложенияДоходовРаботников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СведенияОДоляхЕП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СведенияОСтавкахОСМС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВычетыФизическихЛицИПНИспр</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПрименениеВычетовИПНИспр</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДатаКорректировкиВеденияУчетаПоДаннымНВО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СправкаОРасчетахСФизическимЛицом</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ФормированиеЗаявленийНаПредоставлениеВычетовИПН</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<EventSubscription uuid="b3a8b190-47fb-448c-a16b-dfe2d3276e66">
+		<Properties>
+			<Name>ПроверитьДЗИПередЗаписьюНабораЗаписейЗарплатаКадрыБазоваяРК</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить дату запрета изменения перед записью набора записей</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Source>
+				<v8:Type>cfg:InformationRegisterRecordSet.РазмерыВычетовИПН</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.МесячныйРасчетныйПоказатель</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.НалогообложениеНачислений</v8:Type>
+				<v8:Type>cfg:AccumulationRegisterRecordSet.НалогиВзносыРасчетыНалогоплательщиков</v8:Type>
+				<v8:Type>cfg:AccumulationRegisterRecordSet.ЕПКомпоненты</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.СведенияОДоляхЕП</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.УчетнаяПолитикаЗарплатаКадры</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ПрименениеВычетовИПН</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.РасчетСреднегоЗаработкаСотрудников</v8:Type>
+				<v8:Type>cfg:AccumulationRegisterRecordSet.СведенияОбИсчисленииВычетовИПН</v8:Type>
+				<v8:Type>cfg:AccumulationRegisterRecordSet.ВзаиморасчетыПоПрочимВыплатам</v8:Type>
+				<v8:Type>cfg:AccumulationRegisterRecordSet.НалогиВзносыОтчисленияПоСотрудникам</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ПрочиеВычетыФизическихЛицИПН</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.СрокиПеречисленияВзносовИОтчислений</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.СведенияОСтавкахИПН</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.РасчетСреднегоЗаработкаОрганизаций</v8:Type>
+				<v8:Type>cfg:AccumulationRegisterRecordSet.СведенияОДоходахФизическихЛиц</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ЛьготыФизическихЛицИПН</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ПрименениеВычетовПоВидамДохода</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ВычетыФизическихЛицИПН</v8:Type>
+				<v8:Type>cfg:AccumulationRegisterRecordSet.НалогиВзносыОтчисленияРасчетыСБюджетомИФондами</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.РазмерыДоходовНеПодлежащихНалогообложениюЧастично</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.СтатусФизическихЛицКакНалогоплательщиков</v8:Type>
+				<v8:Type>cfg:AccumulationRegisterRecordSet.ПениПоВзносамИОтчислениям</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.КоэффициентыСтавкиРефинансированияНБ</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.СведенияОФизическихЛицахУчастникахВОВ</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.СведенияОСтавкахНалоговСборовОтчислений</v8:Type>
+				<v8:Type>cfg:AccumulationRegisterRecordSet.ДополнениеРасчетнойБазыУдержаний</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ПорядокОкругленияРезультатовРасчетаЗарплаты</v8:Type>
+				<v8:Type>cfg:AccumulationRegisterRecordSet.СведенияОбИсчисленииНалоговВзносовОтчислений</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.УчетнаяПолитикаПоНалоговомуУчету</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.СведенияОСтавкахОСМС</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.СведенияОПенсионномОбеспеченииФизическихЛиц</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.РасчетСреднегоЗаработкаПодразделений</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.СоответствиеРеквизитовНаРусскомИГосударственномЯзыках</v8:Type>
+			</Source>
+			<Event>BeforeWrite</Event>
+			<Handler>CommonModule.ДатыЗапретаИзменения.ПроверитьДатуЗапретаИзмененияПередЗаписьюНабораЗаписей</Handler>
+		</Properties>
+	</EventSubscription>
+</MetaDataObject>

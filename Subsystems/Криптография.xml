@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Subsystem uuid="9b06ceb6-ff85-49c1-b223-7c30d61f59e5">
+		<Properties>
+			<Name>Криптография</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Криптография</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КриптографияВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КриптографияКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КриптографияКлиентСерверПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.КомпонентаКриптографииWSCrypto</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КриптографияКлиентСерверПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкаКриптографии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипПровайдераКриптографии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПровайдерКриптографии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВводДанныхКриптографии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыКриптография</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КриптографияКлиентПовтИспАсинх</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КриптографияКлиентАсинх</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КриптографияКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.МестоВыполненияКриптографическихОпераций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.МестаВыполненияКриптографическихОпераций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеКриптография</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеКриптография</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КриптографияКомпонентаУстановлена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КриптографияКомпонентаНеОбновлена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КриптографияСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КриптографияСерверПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КриптографияПредупреждение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КриптографияИнформация</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>
